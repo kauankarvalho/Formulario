@@ -521,3 +521,111 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.mt-\[8rem\] {
+  margin-top: 8rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-\[31\.9rem\] {
+  width: 31.9rem;
+}
+
+.w-\[73\.6rem\] {
+  width: 73.6rem;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-\[2\.4rem\] {
+  gap: 2.4rem;
+}
+
+.bg-\[\#D9D9D9\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 217 217 / var(--tw-bg-opacity));
+}
+
+.font-archivo {
+  font-family: Archivo, sans-serif;
+}
+
+.font-poppins {
+  font-family: Poppins, sans-serif;
+}
+
+.text-\[1\.6rem\]\/\[2\.6rem\] {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.text-\[3\.6rem\]\/\[4\.2rem\] {
+  font-size: 3.6rem;
+  line-height: 4.2rem;
+}
+
+.text-\[62\.5\%\] {
+  font-size: 62.5%;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.text-\[\#42D3FF\] {
+  --tw-text-opacity: 1;
+  color: rgb(66 211 255 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.before\:absolute::before {
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.before\:top-0::before {
+  content: var(--tw-content);
+  top: 0px;
+}
+
+.before\:-z-10::before {
+  content: var(--tw-content);
+  z-index: -10;
+}
+
+.before\:h-\[36\.8rem\]::before {
+  content: var(--tw-content);
+  height: 36.8rem;
+}
+
+.before\:w-\[100\%\]::before {
+  content: var(--tw-content);
+  width: 100%;
+}
+
+.before\:bg-black::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
