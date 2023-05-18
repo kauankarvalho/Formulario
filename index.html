@@ -33,7 +33,7 @@
     </header>
 
     <main class="flex justify-center">
-      <form class="w-[73.6rem] rounded-t-[0.8rem] p-[6.4rem] bg-white">
+      <form class="w-[73.6rem] rounded-t-[0.8rem] p-[6.4rem] bg-[#FAFAFC] flex flex-col gap-[4.8rem]">
         <fieldset class="flex flex-col gap-[2.4rem]">
           <legend
             class="font-archivo font-semibold text-[2.4rem]/[3.4rem] text-[#32264D] pb-[1.6rem] border-b-[0.1rem] border-[#E6E6F0] w-[100%]"
@@ -50,7 +50,7 @@
             </label>
 
             <input
-              class="h-[5.6rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] px-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+              class="bg-transparent h-[5.6rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] px-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
               type="text"
               name="event-title"
               id="event-title"
@@ -66,7 +66,7 @@
             </label>
 
             <input
-              class="h-[5.6rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] px-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+              class="bg-transparent h-[5.6rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] px-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
               type="url"
               name="event-link"
               id="event-link"
@@ -82,7 +82,7 @@
             </label>
 
             <input
-              class="h-[5.6rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] px-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+              class="bg-transparent h-[5.6rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] px-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
               type="number"
               name="event-contact"
               id="event-contact"
@@ -95,7 +95,7 @@
             </label>
 
             <textarea
-              class="h-[16.8rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] p-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+              class="bg-transparent h-[16.8rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] p-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
               name="event-info"
               id="event-info"
             ></textarea>
@@ -107,19 +107,76 @@
             </label>
 
             <select
-              class="h-[5.6rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] px-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958] appearance-none bg-[url(../src/assets/select.svg)] bg-no-repeat bg-[right_1.4rem_top_50%] cursor-pointer"
+              class="bg-transparent h-[5.6rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] px-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958] appearance-none bg-[url(../src/assets/select.svg)] bg-no-repeat bg-[right_1.4rem_top_50%] cursor-pointer"
               name="event-category"
               id="event-category"
             >
+              <option value="" disabled selected>Tipo do evento</option>
               <option value="live">Ao vivo</option>
               <option value="podcast">Podcast</option>
               <option value="mentoring">Mentoria</option>
             </select>
           </div>
+        </fieldset>
 
+        <fieldset class="flex flex-col gap-[2.4rem]">
+          <legend
+            class="font-archivo font-semibold text-[2.4rem]/[3.4rem] text-[#32264D] pb-[1.6rem] border-b-[0.1rem] border-[#E6E6F0] w-[100%]"
+          >
+            Privacidade
+          </legend>
+
+          <div class="flex flex-col gap-[0.8rem] mt-[2.4rem]">
+            <label
+              for="event-email"
+              class="font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] flex gap-[1.2rem]"
+            >
+              E-mail do administrador<span class="text-[#C1BCCC]">(digite um email válido)</span>
+            </label>
+
+            <input
+              class="bg-transparent h-[5.6rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] px-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+              type="email"
+              name="event-email"
+              id="event-email"
+            />
+          </div>
+
+          <div class="flex flex-col gap-[0.8rem]">
+            <label
+              for="event-password"
+              class="font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] flex gap-[1.2rem]"
+            >
+              Senha de acesso para os participantes<span class="text-[#C1BCCC]">(mínimo 8 caracteres)</span>
+            </label>
+
+            <input
+              class="bg-transparent h-[5.6rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] px-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+              type="password"
+              name="event-password"
+              id="event-password"
+            />
+          </div>
+
+          <div class="flex gap-[1.6rem]">
+            <input
+              class="appearance-none border-[0.1rem] border-[#E6E6F0] rounded-[0.8rem] w-[2.4rem] cursor-pointer checked:bg-[url(../src/assets/check.svg)] checked:bg-no-repeat checked:bg-center"
+              type="checkbox"
+              name="event-checkbox"
+              id="event-checkbox"
+            />
+
+            <label
+              for="event-checkbox"
+              class="font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] flex gap-[1.2rem]"
+            >
+              Evento privado
+            </label>
+          </div>
+          
         </fieldset>
       </form>
-      
+
     </main>
   </body>
 </html>
