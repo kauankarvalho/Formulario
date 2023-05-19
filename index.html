@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="text-[62.5%]">
+<html lang="pt-br" class="text-[62.5%] max-[430px]:text-[55%]">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -21,7 +21,7 @@
   <body
     class="h-screen before:bg-black before:w-[100%] before:h-[36.8rem] before:absolute before:top-0 before:-z-10 bg-[#D9D9D9]"
   >
-    <header class="flex justify-center mt-[8rem] mb-[4.2rem]">
+    <header class="flex justify-center mt-[8rem] mb-[4.2rem] px-[5rem]">
       <section class="w-[73.6rem]">
         <div class="w-[31.9rem] flex flex-col gap-[2.4rem]">
           <h1 class="font-archivo text-[3.6rem]/[4.2rem] text-white font-bold">Crie e compartilhe seu evento.</h1>
@@ -32,11 +32,14 @@
       </section>
     </header>
 
-    <main class="flex flex-col items-center">
-      <form class="w-[73.6rem] rounded-t-[0.8rem] p-[6.4rem] bg-[#FAFAFC] flex flex-col gap-[4.8rem]" id="event">
+    <main class="flex flex-col items-center px-[5rem]">
+      <form
+        class="w-[100%] max-w-[73.6rem] rounded-t-[0.8rem] p-[6.4rem] bg-[#FAFAFC] flex flex-col gap-[4.8rem] max-[556px]:p-[5rem]"
+        id="event"
+      >
         <fieldset class="flex flex-col gap-[2.4rem]">
           <legend
-            class="font-archivo font-semibold text-[2.4rem]/[3.4rem] text-[#32264D] pb-[1.6rem] border-b-[0.1rem] border-[#E6E6F0] w-[100%]"
+            class="font-archivo font-semibold text-[2.4rem]/[3.4rem] text-[#32264D] pb-[1.6rem] border-b-[0.1rem] border-[#E6E6F0] w-[100%] max-[450px]:text-center"
           >
             Informações do Evento
           </legend>
@@ -44,13 +47,13 @@
           <div class="flex flex-col gap-[0.8rem] mt-[2.4rem]">
             <label
               for="event-title"
-              class="font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] flex gap-[1.2rem]"
+              class="font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] flex gap-[1.2rem] max-[685px]:flex-col max-[685px]:gap-[0rem] max-[405px]:text-center"
             >
               Título do evento<span class="text-[#C1BCCC]">(mínimo 8 caracteres)</span>
             </label>
 
             <input
-              class="bg-transparent h-[5.6rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] px-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+              class="bg-transparent h-[5.6rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] px-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958] w-[100%]"
               type="text"
               name="event-title"
               id="event-title"
@@ -62,13 +65,13 @@
           <div class="flex flex-col gap-[0.8rem]">
             <label
               for="event-link"
-              class="font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] flex gap-[1.2rem]"
+              class="font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] flex gap-[1.2rem] max-[685px]:flex-col max-[685px]:gap-[0rem] max-[405px]:text-center"
             >
               Link do evento<span class="text-[#C1BCCC]">(comece com https://)</span>
             </label>
 
             <input
-              class="bg-transparent h-[5.6rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] px-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+              class="bg-transparent h-[5.6rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] px-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958] w-[100%]"
               type="url"
               name="event-link"
               id="event-link"
@@ -79,13 +82,13 @@
           <div class="flex flex-col gap-[0.8rem]">
             <label
               for="event-contact"
-              class="font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] flex gap-[1.2rem]"
+              class="font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] flex gap-[1.2rem] max-[685px]:flex-col max-[685px]:gap-[0rem] max-[405px]:text-center"
             >
               Whatsapp para contato<span class="text-[#C1BCCC]">(somente números)</span>
             </label>
 
             <input
-              class="bg-transparent h-[5.6rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] px-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+              class="bg-transparent h-[5.6rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] px-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958] w-[100%]"
               type="number"
               name="event-contact"
               id="event-contact"
@@ -94,12 +97,15 @@
           </div>
 
           <div class="flex flex-col gap-[0.8rem]">
-            <label for="event-info" class="font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958]">
+            <label
+              for="event-info"
+              class="font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] max-[685px]:flex-col max-[685px]:gap-[0rem] max-[405px]:text-center"
+            >
               Informações extras
             </label>
 
             <textarea
-              class="bg-transparent h-[16.8rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] p-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+              class="bg-transparent h-[16.8rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] p-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958] w-[100%]"
               name="event-info"
               id="event-info"
               required
@@ -107,7 +113,10 @@
           </div>
 
           <div class="flex flex-col gap-[0.8rem]">
-            <label for="event-category" class="font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958]">
+            <label
+              for="event-category"
+              class="font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] max-[685px]:flex-col max-[685px]:gap-[0rem] max-[405px]:text-center"
+            >
               Categoria
             </label>
 
@@ -135,13 +144,13 @@
           <div class="flex flex-col gap-[0.8rem] mt-[2.4rem]">
             <label
               for="event-email"
-              class="font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] flex gap-[1.2rem]"
+              class="font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] flex gap-[1.2rem] max-[685px]:flex-col max-[685px]:gap-[0rem] max-[405px]:text-center"
             >
               E-mail do administrador<span class="text-[#C1BCCC]">(digite um email válido)</span>
             </label>
 
             <input
-              class="bg-transparent h-[5.6rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] px-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+              class="bg-transparent h-[5.6rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] px-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958] w-[100%]"
               type="email"
               name="event-email"
               id="event-email"
@@ -152,13 +161,13 @@
           <div class="flex flex-col gap-[0.8rem]">
             <label
               for="event-password"
-              class="font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] flex gap-[1.2rem]"
+              class="font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] flex gap-[1.2rem] max-[685px]:flex-col max-[685px]:gap-[0rem] max-[405px]:text-center"
             >
               Senha de acesso para os participantes<span class="text-[#C1BCCC]">(mínimo 8 caracteres)</span>
             </label>
 
             <input
-              class="bg-transparent h-[5.6rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] px-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+              class="bg-transparent h-[5.6rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] px-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958] w-[100%]"
               type="password"
               name="event-password"
               id="event-password"
@@ -185,23 +194,23 @@
           </div>
         </fieldset>
 
-        <fieldset class="flex gap-[2rem]">
+        <fieldset class="flex gap-[2rem] max-[556px]:flex-col">
           <legend
             class="font-archivo font-semibold text-[2.4rem]/[3.4rem] text-[#32264D] pb-[1.6rem] border-b-[0.1rem] border-[#E6E6F0] w-[100%] mb-[2.4rem]"
           >
             Dia e hora
           </legend>
 
-          <div class="flex flex-col gap-[0.8rem]">
+          <div class="flex flex-col gap-[0.8rem] w-[100%] max-w-[31.2rem] max-[556px]:max-w-[100%]">
             <label
               for="event-date"
-              class="font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] flex gap-[1.2rem]"
+              class="font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] flex gap-[1.2rem] justify-center"
             >
               Data
             </label>
 
             <input
-              class="bg-transparent h-[5.6rem] w-[31.2rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] px-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958] cursor-text"
+              class="bg-transparent h-[5.6rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] px-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958] cursor-text w-[100%]"
               type="date"
               name="event-date"
               id="event-date"
@@ -209,16 +218,16 @@
             />
           </div>
 
-          <div class="flex flex-col gap-[0.8rem]">
+          <div class="flex flex-col gap-[0.8rem] w-[100%] max-w-[12.8rem] max-[556px]:max-w-[100%]">
             <label
               for="event-start"
-              class="font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] flex gap-[1.2rem]"
+              class="font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] flex gap-[1.2rem] justify-center"
             >
               Das
             </label>
 
             <input
-              class="bg-transparent h-[5.6rem] w-[12.8rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] px-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958] cursor-text"
+              class="bg-transparent h-[5.6rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] px-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958] cursor-text w-[100%]"
               type="time"
               name="event-start"
               id="event-start"
@@ -226,16 +235,16 @@
             />
           </div>
 
-          <div class="flex flex-col gap-[0.8rem]">
+          <div class="flex flex-col gap-[0.8rem] w-[100%] max-w-[12.8rem] max-[556px]:max-w-[100%]">
             <label
               for="event-end"
-              class="font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] flex gap-[1.2rem]"
+              class="font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] flex gap-[1.2rem] justify-center"
             >
               Até
             </label>
 
             <input
-              class="bg-transparent h-[5.6rem] w-[12.8rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] px-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958] cursor-text"
+              class="bg-transparent h-[5.6rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] px-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958] cursor-text w-[100%]"
               type="time"
               name="event-end"
               id="event-end"
@@ -245,9 +254,11 @@
         </fieldset>
       </form>
 
-      <div class="py-[4rem] px-[6.4rem] bg-[#F0F0F4] mb-[9rem] rounded-b-[0.8rem] border-t-[0.1rem] border-[#D6D6D6]">
+      <div
+        class="py-[4rem] px-[6.4rem] bg-[#F0F0F4] mb-[9rem] rounded-b-[0.8rem] border-t-[0.1rem] border-[#D6D6D6] w-[100%] max-w-[73.6rem]"
+      >
         <button
-          class="bg-[#04D361] py-[1.5rem] px-[4rem] w-[60.8rem] font-archivo font-semibold text-[1.6rem]/[2.6rem] text-white rounded-[0.8rem] hover:opacity-70 transition-opacity duration-[0.3s]"
+          class="bg-[#04D361] w-[100%] py-[1.5rem] px-[4rem] font-archivo font-semibold text-[1.6rem]/[2.6rem] text-white rounded-[0.8rem] hover:opacity-70 transition-opacity duration-[0.3s]"
           type="submit"
           form="event"
         >
