@@ -54,6 +54,8 @@
               type="text"
               name="event-title"
               id="event-title"
+              minlength="8"
+              required
             />
           </div>
 
@@ -70,6 +72,7 @@
               type="url"
               name="event-link"
               id="event-link"
+              required
             />
           </div>
 
@@ -86,6 +89,7 @@
               type="number"
               name="event-contact"
               id="event-contact"
+              required
             />
           </div>
 
@@ -98,6 +102,7 @@
               class="bg-transparent h-[16.8rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] p-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
               name="event-info"
               id="event-info"
+              required
             ></textarea>
           </div>
 
@@ -110,6 +115,7 @@
               class="bg-transparent h-[5.6rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] font-poppins font-normal text-[1.4rem]/[2.4rem] text-[#4E4958] px-[1.4rem] outline-none focus:border-[0.2rem] focus:border-[#4E4958] appearance-none bg-[url(../src/assets/select.svg)] bg-no-repeat bg-[right_1.4rem_top_50%] cursor-pointer"
               name="event-category"
               id="event-category"
+              required
             >
               <option value="" disabled selected>Tipo do evento</option>
               <option value="live">Ao vivo</option>
@@ -139,6 +145,7 @@
               type="email"
               name="event-email"
               id="event-email"
+              required
             />
           </div>
 
@@ -155,6 +162,8 @@
               type="password"
               name="event-password"
               id="event-password"
+              minlength="8"
+              required
             />
           </div>
 
@@ -164,6 +173,7 @@
               type="checkbox"
               name="event-checkbox"
               id="event-checkbox"
+              required
             />
 
             <label
@@ -195,6 +205,7 @@
               type="date"
               name="event-date"
               id="event-date"
+              required
             />
           </div>
 
@@ -211,6 +222,7 @@
               type="time"
               name="event-start"
               id="event-start"
+              required
             />
           </div>
 
@@ -227,6 +239,7 @@
               type="time"
               name="event-end"
               id="event-end"
+              required
             />
           </div>
         </fieldset>
@@ -234,7 +247,7 @@
 
       <div class="py-[4rem] px-[6.4rem] bg-[#F0F0F4] mb-[9rem] rounded-b-[0.8rem] border-t-[0.1rem] border-[#D6D6D6]">
         <button
-          class="bg-[#04D361] py-[1.5rem] px-[4rem] w-[60.8rem] font-archivo font-semibold text-[1.6rem]/[2.6rem] text-white rounded-[0.8rem]"
+          class="bg-[#04D361] py-[1.5rem] px-[4rem] w-[60.8rem] font-archivo font-semibold text-[1.6rem]/[2.6rem] text-white rounded-[0.8rem] hover:opacity-70 transition-opacity duration-[0.3s]"
           type="submit"
           form="event"
         >

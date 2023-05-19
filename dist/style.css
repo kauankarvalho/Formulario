@@ -422,6 +422,15 @@ video {
   display: none;
 }
 
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+  input[type="time"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -819,6 +828,16 @@ video {
   outline-offset: 2px;
 }
 
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-\[0\.3s\] {
+  transition-duration: 0.3s;
+}
+
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
@@ -860,6 +879,10 @@ video {
 
 .checked\:bg-no-repeat:checked {
   background-repeat: no-repeat;
+}
+
+.hover\:opacity-70:hover {
+  opacity: 0.7;
 }
 
 .focus\:border-\[0\.2rem\]:focus {
