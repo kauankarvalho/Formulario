@@ -918,25 +918,15 @@ input[type="date"]::-webkit-calendar-picker-indicator,
     flex-direction: column;
   }
 
+  .max-\[556px\]\:justify-center {
+    justify-content: center;
+  }
+
   .max-\[556px\]\:p-\[5rem\] {
     padding: 5rem;
   }
-}
 
-@media (max-width: 450px) {
-  .max-\[450px\]\:text-center {
-    text-align: center;
-  }
-}
-
-@media (max-width: 430px) {
-  .max-\[430px\]\:text-\[55\%\] {
-    font-size: 55%;
-  }
-}
-
-@media (max-width: 405px) {
-  .max-\[405px\]\:text-center {
+  .max-\[556px\]\:text-center {
     text-align: center;
   }
 }
